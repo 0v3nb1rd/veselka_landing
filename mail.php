@@ -5,8 +5,8 @@ $mail->CharSet = 'utf-8';
 
 $phone = $_POST['polz_tel'];
 $text = $_POST['text'];
-$token = "720013435:AAGG5TCVaK2oU2NBJbYjX9gFGKlx-iECMGg";
-$chat_id = "-305097049";
+$token = "*****************************";
+$chat_id = "-**********";
 $arr = array(
   'Повідомлення: ' => $text,
   'Телефон: ' => $phone
@@ -22,8 +22,8 @@ $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_i
 $mail->isSMTP();                                      // Set mailer to use SMTP
 $mail->Host = 'smtp.gmail.com';  																							// Specify main and backup SMTP servers
 $mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'info.powerbanka@gmail.com'; // Ваш логин от почты с которой будут отправляться письма
-$mail->Password = 'Megapopular'; // Ваш пароль от почты с которой будут отправляться письма
+$mail->Username = '************@gmail.com'; // Ваш логин от почты с которой будут отправляться письма
+$mail->Password = '********'; // Ваш пароль от почты с которой будут отправляться письма
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587; // TCP port to connect to / этот порт может отличаться у других провайдеров
 
